@@ -1,3 +1,5 @@
+""" Trip Type model"""
+
 from django.db import models
 
 class TripType(models.Model):

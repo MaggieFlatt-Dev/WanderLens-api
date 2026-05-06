@@ -1,4 +1,4 @@
-from WanderLensapi.models.trip import Trip
+from WanderLensapi.models import Trip
 from rest_framework import serializers
 
 

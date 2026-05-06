@@ -7,4 +7,4 @@ class TripTypeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TripType
-        fields = ("id", "name", "is_custom")
+        fields = ("id", "name", "is_custom", "created_by_user_id")

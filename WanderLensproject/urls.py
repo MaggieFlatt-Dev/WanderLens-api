@@ -9,14 +9,14 @@ from WanderLensapi.views import (
     )
 from WanderLensapi.views import (
   TripView,
-  TripTypeView
+  TripTypeView,
+  CategoryView
 )
-from WanderLensapi.views.trip import TripView
-from WanderLensapi.views.triptype import TripTypeView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'api/trips', TripView, 'trip')
 router.register(r'api/triptypes', TripTypeView, 'triptype')
+router.register(r'api/categories', CategoryView, 'category')
 
 urlpatterns = [
     path('', include(router.urls)),

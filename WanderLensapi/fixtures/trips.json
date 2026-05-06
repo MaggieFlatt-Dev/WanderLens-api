@@ -1,0 +1,80 @@
+[
+  {
+    "model": "WanderLensapi.trip",
+    "pk": 1,
+    "fields": {
+      "user_id": 1,
+      "trip_type_id": 2,
+      "name": "Trip to Paris",
+      "description": "A wonderful trip to the city of lights.",
+      "color": "#FF5733",
+      "start_date": "2024-07-01",
+      "is_private": false
+    }
+  },
+  {
+    "model": "WanderLensapi.trip",
+    "pk": 2,
+    "fields": {
+      "user_id": 1,
+      "trip_type_id": 3,
+      "name": "Beach Vacation",
+      "description": "Relaxing on the sandy shores.",
+      "color": "#33C1FF",
+      "start_date": "2024-08-15",
+      "is_private": true
+    }
+  },
+  {
+    "model": "WanderLensapi.trip",
+    "pk": 3,
+    "fields": {
+      "user_id": 2,
+      "trip_type_id": 5,
+      "name": "Mountain Hiking",
+      "description": "Exploring the great outdoors.",
+      "color": "#28A745",
+      "start_date": "2024-09-10",
+      "is_private": false
+    }
+  }, 
+  {
+    "model": "WanderLensapi.trip",
+    "pk": 4,
+    "fields": {
+      "user_id": 2,
+      "trip_type_id": 1,
+      "name": "City Break",
+      "description": "Discovering urban gems.",
+      "color": "#FFC300",
+      "start_date": "2024-10-05",
+      "is_private": true
+    }
+  },
+  {
+    "model": "WanderLensapi.trip",
+    "pk": 5,
+    "fields": {
+      "user_id": 3,
+      "trip_type_id": 7,
+      "name": "Cultural Tour",
+      "description": "Immersing in local culture.",
+      "color": "#8E44AD",
+      "start_date": "2024-11-20",
+      "is_private": false
+    }
+  },
+  {
+    "model": "WanderLensapi.trip",
+    "pk": 6,
+    "fields": {
+      "user_id": 3,
+      "trip_type": 2,
+      "name": "Foodie Adventure",
+      "description": "Tasting the world's best cuisine.",
+      "color": "#E74C3C",
+      "start_date": "2024-12-15",
+      "is_private": true
+    }
+  }
+]

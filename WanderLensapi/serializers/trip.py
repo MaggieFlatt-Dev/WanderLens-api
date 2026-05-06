@@ -7,5 +7,8 @@ class TripSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Trip
-        fields = ("id", "user_id", "trip_type_id", "name", "description", "start_date")
-
+        fields = (
+            "id", 
+            "user_id", "trip_type_id", 
+            "name", 
+            "description", "start_date")

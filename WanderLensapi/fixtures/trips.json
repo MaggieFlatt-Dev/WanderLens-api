@@ -69,7 +69,7 @@
     "pk": 6,
     "fields": {
       "user_id": 3,
-      "trip_type": 2,
+      "trip_type_id": 2,
       "name": "Foodie Adventure",
       "description": "Tasting the world's best cuisine.",
       "color": "#E74C3C",

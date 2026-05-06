@@ -8,4 +8,5 @@ python3 manage.py loaddata users
 python3 manage.py loaddata tokens
 python3 manage.py loaddata categories
 python3 manage.py loaddata triptypes
+python3 manage.py loaddata trips
 

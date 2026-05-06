@@ -9,6 +9,8 @@ class TripSerializer(serializers.ModelSerializer):
         model = Trip
         fields = (
             "id", 
-            "user_id", "trip_type_id", 
+            "user_id", 
+            "trip_type_id", 
             "name", 
-            "description", "start_date")
+            "description", 
+            "start_date")

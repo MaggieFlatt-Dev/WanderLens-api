@@ -89,7 +89,7 @@ class TripView(ViewSet):
             Response -- JSON serialized array
         """
         try:
-            trips = Trip.objects.filter(user=request.auth.user)
+            trips = Trip.objects.filter(user=request.auth.user).order_by("-start_date")
             serializer = TripSerializer(trips, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:

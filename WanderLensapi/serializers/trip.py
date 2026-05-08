@@ -10,9 +10,11 @@ class TripSerializer(serializers.ModelSerializer):
         fields = (
             "id", 
             "user_id", 
-            "trip_type_id", 
+            "trip_type", 
             "name", 
             "description", 
             "start_date",
             "is_private",
-            "color")
+            "color",
+        )
+        depth = 1

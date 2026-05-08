@@ -3,56 +3,72 @@
     "model": "WanderLensapi.triptype",
     "pk": 1,
     "fields": {
-      "name": "Solo"  
+      "name": "Solo",
+      "is_custom": false,
+      "created_by_user_id": null 
   }
 },
   {
     "model": "WanderLensapi.triptype",
     "pk": 2,
     "fields": {
-      "name": "Romantic"  
+      "name": "Romantic",
+      "is_custom": false,
+      "created_by_user_id": null   
   }
 },
   {
     "model": "WanderLensapi.triptype",
     "pk": 3,
     "fields": {
-      "name": "Family"  
+      "name": "Family",
+      "is_custom": false,
+      "created_by_user_id": null   
   }
 },
   {
     "model": "WanderLensapi.triptype",
     "pk": 4,
     "fields": {
-      "name": "Work"  
+      "name": "Work",
+      "is_custom": false,
+      "created_by_user_id": null   
   }
 },
   {
     "model": "WanderLensapi.triptype",
     "pk": 5,
     "fields": {
-      "name": "Friends"  
+      "name": "Friends",
+      "is_custom": false,
+      "created_by_user_id": null   
   }
 },
   {
     "model": "WanderLensapi.triptype",
     "pk": 6,
     "fields": {
-      "name": "Cruise"  
+      "name": "Cruise",
+      "is_custom": false,
+      "created_by_user_id": null  
   }
 },
 {
     "model": "WanderLensapi.triptype",
     "pk": 7,
     "fields": {
-      "name": "School"  
+      "name": "School",
+      "is_custom": false,
+      "created_by_user_id": null   
   }
 },
 {
     "model": "WanderLensapi.triptype",
-    "pk": 7,
+    "pk": 8,
     "fields": {
-      "name": "Other"  
+      "name": "Other",
+      "is_custom": false,
+      "created_by_user_id": null   
   }
 }
 ]

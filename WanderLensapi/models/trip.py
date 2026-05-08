@@ -17,7 +17,11 @@ class Trip(models.Model):
         related_name="trips",
     )
     name = models.CharField(max_length=150)
+
     description = models.TextField(blank=True)
+
     color = models.CharField(max_length=7, default="#3B82F6")
+
     start_date = models.DateField()
+
     is_private = models.BooleanField(default=False)

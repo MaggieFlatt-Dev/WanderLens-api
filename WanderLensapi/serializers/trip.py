@@ -13,4 +13,6 @@ class TripSerializer(serializers.ModelSerializer):
             "trip_type_id", 
             "name", 
             "description", 
-            "start_date")
+            "start_date",
+            "is_private",
+            "color")

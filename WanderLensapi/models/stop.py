@@ -10,3 +10,4 @@ class Stop(models.Model):
     latitude = models.FloatField()
     longitude = models.FloatField()
     visited_date = models.DateField()
+    categories = models.ManyToManyField("Category")

@@ -10,4 +10,5 @@ python3 manage.py loaddata categories
 python3 manage.py loaddata triptypes
 python3 manage.py loaddata trips
 python3 manage.py loaddata stops
+python3 manage.py loaddata stopcategories
 

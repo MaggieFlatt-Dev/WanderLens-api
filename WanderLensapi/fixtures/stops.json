@@ -4,12 +4,12 @@
     "pk": 1,
     "fields": {
       "trip_id": 1,
-      "name": "Paris",
-      "description": "The city of lights — art, food, and iconic architecture.",
-      "city": "Paris",
+      "name": "Bordeaux",
+      "description": "An amazing vineyard with delicious wine.",
+      "city": "Bordeaux",
       "country": "France",
-      "latitude": 48.8566,
-      "longitude": 2.3522,
+      "latitude": 44.8378,
+      "longitude": -0.5792,
       "visited_date": "2024-07-02"
     }
   },

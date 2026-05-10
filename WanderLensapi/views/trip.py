@@ -40,9 +40,11 @@ class TripView(ViewSet):
             Response -- JSON serialized instance
         """
         try:
-            trip = Trip.objects.get(pk=pk)
+            trip = Trip.objects.get(pk=pk, user=request.auth.user)
             serializer = TripSerializer(trip)
             return Response(serializer.data)
+        except Trip.DoesNotExist:
+            return Response({"reason": "Not found"}, status=status.HTTP_404_NOT_FOUND)
         except Exception as ex:
             return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -53,7 +55,7 @@ class TripView(ViewSet):
             Response -- Empty body with 204 status code
         """
         try:
-            trip = Trip.objects.get(pk=pk)
+            trip = Trip.objects.get(pk=pk, user=request.auth.user)
             trip.name = request.data["name"]
             trip.description = request.data["description"]
             trip.save()
@@ -72,7 +74,7 @@ class TripView(ViewSet):
             Response -- 200, 404, or 500 status code
         """
         try:
-            trip = Trip.objects.get(pk=pk)
+            trip = Trip.objects.get(pk=pk, user=request.auth.user)
             trip.delete()
             return Response(None, status=status.HTTP_204_NO_CONTENT)
 
@@ -93,5 +95,5 @@ class TripView(ViewSet):
             serializer = TripSerializer(trips, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:
-            return HttpResponseServerError(ex)
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 

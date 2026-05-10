@@ -1,0 +1,170 @@
+[
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 1,
+    "fields": {
+      "trip_id": 1,
+      "name": "Bordeaux",
+      "description": "An amazing vineyard with delicious wine.",
+      "city": "Bordeaux",
+      "country": "France",
+      "latitude": 44.8378,
+      "longitude": -0.5792,
+      "visited_date": "2024-07-02"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 2,
+    "fields": {
+      "trip_id": 1,
+      "name": "Lyon",
+      "description": "France's culinary capital with a stunning old town.",
+      "city": "Lyon",
+      "country": "France",
+      "latitude": 45.7640,
+      "longitude": 4.8357,
+      "visited_date": "2024-07-05"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 3,
+    "fields": {
+      "trip_id": 2,
+      "name": "Cancun",
+      "description": "Crystal-clear Caribbean waters and white sand beaches.",
+      "city": "Cancun",
+      "country": "Mexico",
+      "latitude": 21.1619,
+      "longitude": -86.8515,
+      "visited_date": "2024-08-16"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 4,
+    "fields": {
+      "trip_id": 2,
+      "name": "Tulum",
+      "description": "Bohemian beach town with Mayan ruins overlooking the sea.",
+      "city": "Tulum",
+      "country": "Mexico",
+      "latitude": 20.2114,
+      "longitude": -87.4654,
+      "visited_date": "2024-08-19"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 5,
+    "fields": {
+      "trip_id": 3,
+      "name": "Denver",
+      "description": "Gateway to the Rockies with a vibrant outdoor culture.",
+      "city": "Denver",
+      "country": "United States",
+      "latitude": 39.7392,
+      "longitude": -104.9903,
+      "visited_date": "2024-09-10"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 6,
+    "fields": {
+      "trip_id": 3,
+      "name": "Aspen",
+      "description": "World-class skiing and mountain scenery in the Colorado Rockies.",
+      "city": "Aspen",
+      "country": "United States",
+      "latitude": 39.1911,
+      "longitude": -106.8175,
+      "visited_date": "2024-09-13"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 7,
+    "fields": {
+      "trip_id": 4,
+      "name": "Berlin",
+      "description": "A city of history, nightlife, and world-class museums.",
+      "city": "Berlin",
+      "country": "Germany",
+      "latitude": 52.5200,
+      "longitude": 13.4050,
+      "visited_date": "2024-10-05"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 8,
+    "fields": {
+      "trip_id": 4,
+      "name": "Prague",
+      "description": "Fairy-tale architecture and a medieval old town.",
+      "city": "Prague",
+      "country": "Czech Republic",
+      "latitude": 50.0755,
+      "longitude": 14.4378,
+      "visited_date": "2024-10-08"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 9,
+    "fields": {
+      "trip_id": 5,
+      "name": "Kyoto",
+      "description": "Ancient temples, geisha culture, and stunning gardens.",
+      "city": "Kyoto",
+      "country": "Japan",
+      "latitude": 35.0116,
+      "longitude": 135.7681,
+      "visited_date": "2024-11-20"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 10,
+    "fields": {
+      "trip_id": 5,
+      "name": "Osaka",
+      "description": "Street food paradise with a lively, welcoming atmosphere.",
+      "city": "Osaka",
+      "country": "Japan",
+      "latitude": 34.6937,
+      "longitude": 135.5023,
+      "visited_date": "2024-11-24"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 11,
+    "fields": {
+      "trip_id": 6,
+      "name": "Barcelona",
+      "description": "Bold architecture, tapas, and a buzzing food scene.",
+      "city": "Barcelona",
+      "country": "Spain",
+      "latitude": 41.3851,
+      "longitude": 2.1734,
+      "visited_date": "2024-12-15"
+    }
+  },
+  {
+    "model": "WanderLensapi.stop",
+    "pk": 12,
+    "fields": {
+      "trip_id": 6,
+      "name": "San Sebastian",
+      "description": "Pintxos capital of the world with Michelin-starred restaurants.",
+      "city": "San Sebastian",
+      "country": "Spain",
+      "latitude": 43.3183,
+      "longitude": -1.9812,
+      "visited_date": "2024-12-18"
+    }
+  }
+]

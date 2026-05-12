@@ -3,6 +3,7 @@ from django.http import HttpResponseServerError
 from rest_framework import serializers, status
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
+from WanderLensapi.models.category import Category
 from WanderLensapi.models.stop import Stop
 from WanderLensapi.models.trip import Trip
 from WanderLensapi.serializers.stop import StopSerializer
@@ -41,7 +42,7 @@ class StopView(ViewSet):
             Response -- JSON serialized instance
         """
         try:
-            stop = Stop.objects.get(pk=pk)
+            stop = Stop.objects.get(pk=pk, trip__user=request.auth.user)
             serializer = StopSerializer(stop)
             return Response(serializer.data)
         except Stop.DoesNotExist:
@@ -49,16 +50,26 @@ class StopView(ViewSet):
         except Exception as ex:
             return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
 
-    def update(self, request, pk=None):
-        """Handle PUT requests
+    def partial_update(self, request, pk=None):
+        """Handle PATCH requests
 
         Returns:
             Response -- Empty body with 204 status code
         """
         try:
-            stop = Stop.objects.get(pk=pk, user=request.auth.user)
-            stop.name = request.data["name"]
-            stop.description = request.data["description"]
+            stop = Stop.objects.get(pk=pk, trip__user=request.auth.user)
+            if "name" in request.data:
+                stop.name = request.data["name"]
+            if "description" in request.data:
+                stop.description = request.data["description"]
+            if "city" in request.data:
+                stop.city = request.data["city"]
+            if "country" in request.data:
+                stop.country = request.data["country"]
+            if "visited_date" in request.data:
+                stop.visited_date = request.data["visited_date"]
+            if "categories" in request.data:
+                stop.category = Category.objects.get(pk=request.data["category_id"])
             stop.save()
         except Stop.DoesNotExist:
             return Response(None, status=status.HTTP_404_NOT_FOUND)
@@ -75,7 +86,7 @@ class StopView(ViewSet):
             Response -- 200, 404, or 500 status code
         """
         try:
-            stop = Stop.objects.get(pk=pk, user=request.auth.user)
+            stop = Stop.objects.get(pk=pk, trip__user=request.auth.user)
             stop.delete()
             return Response(None, status=status.HTTP_204_NO_CONTENT)
 
@@ -92,7 +103,7 @@ class StopView(ViewSet):
             Response -- JSON serialized array
         """
         try:
-            stops = Stop.objects.filter(user=request.auth.user).order_by("-start_date")
+            stops = Stop.objects.filter(trip__user=request.auth.user).order_by("-start_date")
             serializer = StopSerializer(stops, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:

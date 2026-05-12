@@ -34,67 +34,67 @@ class StopView(ViewSet):
         except Exception as ex:
             return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
 
-    # def retrieve(self, request, pk=None):
-    #     """Handle GET requests for single item
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single stop
 
-    #     Returns:
-    #         Response -- JSON serialized instance
-    #     """
-    #     try:
-    #         stop = Stop.objects.get(pk=pk, user=request.auth.user)
-    #         serializer = StopSerializer(stop)
-    #         return Response(serializer.data)
-    #     except Stop.DoesNotExist:
-    #         return Response({"reason": "Not found"}, status=status.HTTP_404_NOT_FOUND)
-    #     except Exception as ex:
-    #         return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
+        Returns:
+            Response -- JSON serialized instance
+        """
+        try:
+            stop = Stop.objects.get(pk=pk)
+            serializer = StopSerializer(stop)
+            return Response(serializer.data)
+        except Stop.DoesNotExist:
+            return Response({"reason": "Not found"}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as ex:
+            return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
 
-    # def update(self, request, pk=None):
-    #     """Handle PUT requests
+    def update(self, request, pk=None):
+        """Handle PUT requests
 
-    #     Returns:
-    #         Response -- Empty body with 204 status code
-    #     """
-    #     try:
-    #         stop = Stop.objects.get(pk=pk, user=request.auth.user)
-    #         stop.name = request.data["name"]
-    #         stop.description = request.data["description"]
-    #         stop.save()
-    #     except Stop.DoesNotExist:
-    #         return Response(None, status=status.HTTP_404_NOT_FOUND)
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        try:
+            stop = Stop.objects.get(pk=pk, user=request.auth.user)
+            stop.name = request.data["name"]
+            stop.description = request.data["description"]
+            stop.save()
+        except Stop.DoesNotExist:
+            return Response(None, status=status.HTTP_404_NOT_FOUND)
 
-    #     except Exception as ex:
-    #         return HttpResponseServerError(ex)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
 
-    #     return Response(None, status=status.HTTP_204_NO_CONTENT)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
-    # def destroy(self, request, pk=None):
-    #     """Handle DELETE requests for a single item
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a single stop
 
-    #     Returns:
-    #         Response -- 200, 404, or 500 status code
-    #     """
-    #     try:
-    #         stop = Stop.objects.get(pk=pk, user=request.auth.user)
-    #         stop.delete()
-    #         return Response(None, status=status.HTTP_204_NO_CONTENT)
+        Returns:
+            Response -- 200, 404, or 500 status code
+        """
+        try:
+            stop = Stop.objects.get(pk=pk, user=request.auth.user)
+            stop.delete()
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
 
-    #     except Stop.DoesNotExist as ex:
-    #         return Response({message: ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+        except Stop.DoesNotExist as ex:
+            return Response({"message": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-    #     except Exception as ex:
-    #         return Response({message: ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as ex:
+            return Response({"message": ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    # def list(self, request):
-    #     """Handle GET requests for all items
+    def list(self, request):
+        """Handle GET requests for all stops
 
-    #     Returns:
-    #         Response -- JSON serialized array
-    #     """
-    #     try:
-    #         stops = Stop.objects.filter(user=request.auth.user).order_by("-start_date")
-    #         serializer = StopSerializer(stops, many=True)
-    #         return Response(serializer.data, status=status.HTTP_200_OK)
-    #     except Exception as ex:
-    #         return Response(status=status.HTTP_400_BAD_REQUEST)
+        Returns:
+            Response -- JSON serialized array
+        """
+        try:
+            stops = Stop.objects.filter(user=request.auth.user).order_by("-start_date")
+            serializer = StopSerializer(stops, many=True)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Exception as ex:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 

@@ -14,6 +14,7 @@ from WanderLensapi.views import (
 )
 from WanderLensapi.views.stop import StopView
 
+
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'api/trips', TripView, 'trip')
 router.register(r'api/triptypes', TripTypeView, 'triptype')

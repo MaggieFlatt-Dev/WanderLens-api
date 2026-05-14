@@ -32,11 +32,11 @@ class StopView(ViewSet):
             new_stop.save()
             categories = Category.objects.filter(pk__in=request.data.get("category_ids", []))
             new_stop.categories.set(categories)
-            serializer = StopSerializer(new_stop)
+            serializer = StopSerializer(Stop.objects.get(pk=new_stop.pk))
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         except Exception as ex:
             return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
-
+            
     def retrieve(self, request, pk=None):
         """Handle GET requests for single stop
 

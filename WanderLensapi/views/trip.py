@@ -48,16 +48,26 @@ class TripView(ViewSet):
         except Exception as ex:
             return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
 
-    def update(self, request, pk=None):
-        """Handle PUT requests
+    def partial_update(self, request, pk=None):
+        """Handle PATCH requests
 
         Returns:
             Response -- Empty body with 204 status code
         """
         try:
             trip = Trip.objects.get(pk=pk, user=request.auth.user)
-            trip.name = request.data["name"]
-            trip.description = request.data["description"]
+            if "name" in request.data:
+                trip.name = request.data["name"]
+            if "description" in request.data:
+                trip.description = request.data["description"]
+            if "trip_type_id" in request.data:
+                trip.trip_type = TripType.objects.get(pk=request.data["trip_type_id"])
+            if "start_date" in request.data:
+                trip.start_date = request.data["start_date"]
+            if "color" in request.data:
+                trip.color = request.data["color"]
+            if "is_private" in request.data:
+                trip.is_private = request.data["is_private"]
             trip.save()
         except Trip.DoesNotExist:
             return Response(None, status=status.HTTP_404_NOT_FOUND)
@@ -79,10 +89,10 @@ class TripView(ViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
 
         except Trip.DoesNotExist as ex:
-            return Response({message: ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"message": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
         except Exception as ex:
-            return Response({message: ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response({"message": ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def list(self, request):
         """Handle GET requests for all items
@@ -94,6 +104,6 @@ class TripView(ViewSet):
             trips = Trip.objects.filter(user=request.auth.user).order_by("-start_date")
             serializer = TripSerializer(trips, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
-        except Exception as ex:
+        except Exception:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 

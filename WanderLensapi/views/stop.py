@@ -30,6 +30,8 @@ class StopView(ViewSet):
 
         try:
             new_stop.save()
+            categories = Category.objects.filter(pk__in=request.data.get("category_ids", []))
+            new_stop.categories.set(categories)
             serializer = StopSerializer(new_stop)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         except Exception as ex:
@@ -68,8 +70,8 @@ class StopView(ViewSet):
                 stop.country = request.data["country"]
             if "visited_date" in request.data:
                 stop.visited_date = request.data["visited_date"]
-            if "categories" in request.data:
-                stop.category = Category.objects.get(pk=request.data["category_id"])
+            if "category_ids" in request.data:
+                stop.categories.set(Category.objects.filter(pk__in=request.data["category_ids"]))
             stop.save()
         except Stop.DoesNotExist:
             return Response(None, status=status.HTTP_404_NOT_FOUND)
@@ -106,6 +108,6 @@ class StopView(ViewSet):
             stops = Stop.objects.filter(trip__user=request.auth.user).order_by("-start_date")
             serializer = StopSerializer(stops, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
-        except Exception as ex:
+        except Exception:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 

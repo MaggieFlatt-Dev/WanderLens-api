@@ -105,7 +105,7 @@ class StopView(ViewSet):
             Response -- JSON serialized array
         """
         try:
-            stops = Stop.objects.filter(trip__user=request.auth.user).order_by("-start_date")
+            stops = Stop.objects.filter(trip__user=request.auth.user).order_by("-visited_date")
             serializer = StopSerializer(stops, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception:

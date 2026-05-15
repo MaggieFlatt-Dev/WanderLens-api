@@ -15,9 +15,6 @@ class StopSerializer(serializers.ModelSerializer):
         model = Stop
         fields = (
             "id",
-            "trip_id",
-            "trip_name",
-            "trip_color",
             "name",
             "description",
             "city",
@@ -26,4 +23,7 @@ class StopSerializer(serializers.ModelSerializer):
             "longitude",
             "visited_date",
             "categories",
+            "trip_id",
+            "trip_name",
+            "trip_color",
         )

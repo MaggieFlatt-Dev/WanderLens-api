@@ -22,7 +22,7 @@ class StopView(ViewSet):
         new_stop.trip = Trip.objects.get(pk=request.data["trip_id"])
         new_stop.name = request.data["name"]
         new_stop.description = request.data["description"]
-        new_stop.city = request.data["city"]
+        new_stop.city = request.data.get("city", None)
         new_stop.country = request.data["country"]
         new_stop.latitude = request.data.get("latitude", 0.0)
         new_stop.longitude = request.data.get("longitude", 0.0)

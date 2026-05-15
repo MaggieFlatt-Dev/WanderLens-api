@@ -11,3 +11,6 @@ class Stop(models.Model):
     longitude = models.FloatField()
     visited_date = models.DateField()
     categories = models.ManyToManyField("Category")
+
+    class Meta:
+        ordering=["-visited_date"]

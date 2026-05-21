@@ -1,0 +1,74 @@
+[
+  {
+    "pk": 1,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Adventure",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 2,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Relaxation",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 3,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Cultural",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 4,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Nature",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 5,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Food & Drink",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 6,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "History",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 7,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Spiritual",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+},
+  {
+    "pk": 8,
+    "model": "WanderLensapi.category",
+    "fields": {
+      "name": "Miscellaneous",
+      "is_custom": false,
+      "created_by_user_id": null  
+  }
+}
+]

@@ -37,8 +37,8 @@ The API will be running at `http://localhost:8000`.
 | POST | `/login` | Log in |
 | GET | `/current_user` | Get logged in user |
 | GET/POST | `/api/trips` | List or create trips |
-| GET/PUT/DELETE | `/api/trips/:id` | Get, update, or delete a trip |
+| GET/PATCH/DELETE | `/api/trips/:id` | Get, update, or delete a trip |
 | GET/POST | `/api/stops` | List or create stops |
-| GET/PUT/DELETE | `/api/stops/:id` | Get, update, or delete a stop |
+| GET/PATCH/DELETE | `/api/stops/:id` | Get, update, or delete a stop |
 | GET | `/api/triptypes` | List trip types |
 | GET | `/api/categories` | List categories |

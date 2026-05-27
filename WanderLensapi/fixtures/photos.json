@@ -1,0 +1,29 @@
+[
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 1,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/Florence1.jpg",
+      "description": "The Duomo from our window"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 2,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/Florence2.jpg",
+      "description": "A rainy street view"
+    }
+  },
+   {
+    "model": "WanderLensapi.photo",
+    "pk": 3,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/Florence3.jpg",
+      "description": "The Duomo at night"
+    }
+  }
+]

@@ -5,8 +5,8 @@
     "fields": {
       "user_id": 1,
       "trip_type_id": 2,
-      "name": "Trip to Paris",
-      "description": "A wonderful trip to the city of lights.",
+      "name": "Trip to Italy",
+      "description": "A month long family adventure through Italy.",
       "color": "#FF5733",
       "start_date": "2024-07-01",
       "is_private": false

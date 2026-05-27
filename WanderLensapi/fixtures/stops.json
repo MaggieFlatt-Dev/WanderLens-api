@@ -4,12 +4,12 @@
     "pk": 1,
     "fields": {
       "trip_id": 1,
-      "name": "Bordeaux",
-      "description": "An amazing vineyard with delicious wine.",
-      "city": "Bordeaux",
-      "country": "France",
-      "latitude": 44.8378,
-      "longitude": -0.5792,
+      "name": "Florence",
+      "description": "My favorite place in Italy!",
+      "city": "Florence",
+      "country": "Italy",
+      "latitude": 43.7696,
+      "longitude": 11.2558,
       "visited_date": "2024-07-02"
     }
   },
@@ -18,12 +18,12 @@
     "pk": 2,
     "fields": {
       "trip_id": 1,
-      "name": "Lyon",
-      "description": "France's culinary capital with a stunning old town.",
-      "city": "Lyon",
-      "country": "France",
-      "latitude": 45.7640,
-      "longitude": 4.8357,
+      "name": "Rome",
+      "description": "The eternal city with a rich history and incredible architecture.",
+      "city": "Rome",
+      "country": "Italy",
+      "latitude": 41.9029,
+      "longitude": 12.4964,
       "visited_date": "2024-07-05"
     }
   },

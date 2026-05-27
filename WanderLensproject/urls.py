@@ -15,6 +15,7 @@ from WanderLensapi.views import (
   CategoryView
 )
 from WanderLensapi.views.stop import StopView
+from WanderLensapi.views.photo import PhotoView
 
 
 router = routers.DefaultRouter(trailing_slash=False)
@@ -22,6 +23,7 @@ router.register(r'api/trips', TripView, 'trip')
 router.register(r'api/triptypes', TripTypeView, 'triptype')
 router.register(r'api/categories', CategoryView, 'category')
 router.register(r'api/stops', StopView, 'stop')
+router.register(r'api/photos', PhotoView, 'photo')
 
 urlpatterns = [
     path('', include(router.urls)),

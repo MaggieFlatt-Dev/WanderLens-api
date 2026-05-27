@@ -1,6 +1,5 @@
 from WanderLensapi.models import Trip
 from rest_framework import serializers
-
 from WanderLensapi.serializers.stop import StopSerializer
 
 

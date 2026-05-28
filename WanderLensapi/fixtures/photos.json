@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "stop": 1,
-      "image": "stop_photos/Florence1.jpg",
+      "image": "stop_photos/Florence1.jpeg",
       "description": "The Duomo from our window"
     }
   },
@@ -13,7 +13,7 @@
     "pk": 2,
     "fields": {
       "stop": 1,
-      "image": "stop_photos/Florence2.jpg",
+      "image": "stop_photos/Florence2.jpeg",
       "description": "A rainy street view"
     }
   },
@@ -22,7 +22,7 @@
     "pk": 3,
     "fields": {
       "stop": 1,
-      "image": "stop_photos/Florence3.jpg",
+      "image": "stop_photos/Florence3.jpeg",
       "description": "The Duomo at night"
     }
   }

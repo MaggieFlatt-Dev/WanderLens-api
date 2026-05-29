@@ -39,108 +39,108 @@
     "model": "WanderLensapi.stop_categories", 
     "pk": 7, 
     "fields": { 
-      "stop_id": 4, "category_id": 2 } 
+      "stop_id": 5, "category_id": 1 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
     "pk": 8, 
     "fields": { 
-      "stop_id": 4, "category_id": 6 } 
+      "stop_id": 5, "category_id": 4 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
     "pk": 9, 
     "fields": { 
-      "stop_id": 5, "category_id": 1 } 
+      "stop_id": 6, "category_id": 1 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
     "pk": 10, 
     "fields": { 
-      "stop_id": 5, "category_id": 4 } 
+      "stop_id": 6, "category_id": 4 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
     "pk": 11, 
     "fields": { 
-      "stop_id": 6, "category_id": 1 } 
-    },
-  { 
-    "model": "WanderLensapi.stop_categories", 
-    "pk": 12, 
-    "fields": { 
-      "stop_id": 6, "category_id": 4 } 
-    },
-  { 
-    "model": "WanderLensapi.stop_categories", 
-    "pk": 13, 
-    "fields": { 
       "stop_id": 7, "category_id": 3 } 
     },
   {
     "model": "WanderLensapi.stop_categories", 
-    "pk": 14, 
+    "pk": 12, 
     "fields": { 
       "stop_id": 7, "category_id": 6 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 15, 
+    "pk": 13, 
     "fields": { 
       "stop_id": 8, "category_id": 3 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 16, 
+    "pk": 14, 
     "fields": { 
       "stop_id": 8, "category_id": 6 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 17, 
+    "pk": 15, 
     "fields": { 
       "stop_id": 9, "category_id": 3 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 18, 
+    "pk": 16, 
     "fields": { 
       "stop_id": 9, "category_id": 7 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 19, 
+    "pk": 17, 
     "fields": { 
       "stop_id": 10, "category_id": 5 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 20, 
+    "pk": 18, 
     "fields": { 
       "stop_id": 10, "category_id": 3 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 21, 
+    "pk": 19, 
     "fields": { 
       "stop_id": 11, "category_id": 5 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 22, 
+    "pk": 20, 
     "fields": { 
       "stop_id": 11, "category_id": 3 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 23, 
+    "pk": 21, 
     "fields": { 
       "stop_id": 12, "category_id": 5 } 
     },
   { 
     "model": "WanderLensapi.stop_categories", 
-    "pk": 24, 
+    "pk": 22, 
     "fields": { 
       "stop_id": 12, "category_id": 3 } 
+    },
+    { 
+    "model": "WanderLensapi.stop_categories", 
+    "pk": 23, 
+    "fields": { 
+      "stop_id": 13, "category_id": 6 } 
+    },
+     { 
+    "model": "WanderLensapi.stop_categories", 
+    "pk": 24, 
+    "fields": { 
+      "stop_id": 13, "category_id": 3 } 
     }
 ]

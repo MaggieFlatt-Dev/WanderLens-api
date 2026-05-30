@@ -4,12 +4,12 @@
     "pk": 1,
     "fields": {
       "trip_id": 1,
-      "name": "Bordeaux",
-      "description": "An amazing vineyard with delicious wine.",
-      "city": "Bordeaux",
-      "country": "France",
-      "latitude": 44.8378,
-      "longitude": -0.5792,
+      "name": "Florence",
+      "description": "My favorite place in Italy!",
+      "city": "Florence",
+      "country": "Italy",
+      "latitude": 43.7696,
+      "longitude": 11.2558,
       "visited_date": "2024-07-02"
     }
   },
@@ -18,12 +18,12 @@
     "pk": 2,
     "fields": {
       "trip_id": 1,
-      "name": "Lyon",
-      "description": "France's culinary capital with a stunning old town.",
-      "city": "Lyon",
-      "country": "France",
-      "latitude": 45.7640,
-      "longitude": 4.8357,
+      "name": "Rome",
+      "description": "The eternal city with a rich history and incredible architecture.",
+      "city": "Rome",
+      "country": "Italy",
+      "latitude": 41.9029,
+      "longitude": 12.4964,
       "visited_date": "2024-07-05"
     }
   },
@@ -32,27 +32,13 @@
     "pk": 3,
     "fields": {
       "trip_id": 2,
-      "name": "Cancun",
-      "description": "Crystal-clear Caribbean waters and white sand beaches.",
-      "city": "Cancun",
-      "country": "Mexico",
-      "latitude": 21.1619,
-      "longitude": -86.8515,
+      "name": "Gulf Shores",
+      "description": "Beautiful beaches and a relaxing atmosphere on the Gulf of Mexico.",
+      "city": "Gulf Shores",
+      "country": "USA",
+      "latitude": 30.2433,
+      "longitude": -87.717367,
       "visited_date": "2024-08-16"
-    }
-  },
-  {
-    "model": "WanderLensapi.stop",
-    "pk": 4,
-    "fields": {
-      "trip_id": 2,
-      "name": "Tulum",
-      "description": "Bohemian beach town with Mayan ruins overlooking the sea.",
-      "city": "Tulum",
-      "country": "Mexico",
-      "latitude": 20.2114,
-      "longitude": -87.4654,
-      "visited_date": "2024-08-19"
     }
   },
   {
@@ -164,6 +150,20 @@
       "country": "Spain",
       "latitude": 43.3183,
       "longitude": -1.9812,
+      "visited_date": "2024-12-18"
+    }
+  },
+   {
+    "model": "WanderLensapi.stop",
+    "pk": 13,
+    "fields": {
+      "trip_id": 7,
+      "name": "Cairo",
+      "description": "Exploring the Ancient Egyptian wonders and vibrant culture.",
+      "city": "Cairo",
+      "country": "Egypt",
+      "latitude": 26.8206,
+      "longitude": 30.8025,
       "visited_date": "2024-12-18"
     }
   }

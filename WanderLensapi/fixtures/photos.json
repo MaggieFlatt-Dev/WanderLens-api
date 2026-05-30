@@ -1,0 +1,192 @@
+[
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 1,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/Florence1.jpeg",
+      "description": "The Duomo from our window"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 2,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/Florence2.jpeg",
+      "description": "A rainy street view"
+    }
+  },
+   {
+    "model": "WanderLensapi.photo",
+    "pk": 3,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/Florence3.jpeg",
+      "description": "The Duomo at night"
+    }
+  },
+   {
+    "model": "WanderLensapi.photo",
+    "pk": 4,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/florenceBridge.jpeg",
+      "description": "The Ponte Vecchio"
+    }
+  },
+   {
+    "model": "WanderLensapi.photo",
+    "pk": 5,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/florenceCoffee.jpeg",
+      "description": "An afternoon coffee break"
+    }
+  },
+   {
+    "model": "WanderLensapi.photo",
+    "pk": 6,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/florenceRestaurant.jpeg",
+      "description": "Dinner at our favorite restaurant"
+    }
+  },
+   {
+    "model": "WanderLensapi.photo",
+    "pk": 7,
+    "fields": {
+      "stop": 1,
+      "image": "stop_photos/riceArt.jpeg",
+      "description": "A unique art installation made of rice, vegetables, and local flowers"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 8,
+    "fields": {
+      "stop": 3,
+      "image": "stop_photos/beachSunset.jpeg",
+      "description": "A beautiful sunset on the beach"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 9,
+    "fields": {
+      "stop": 3,
+      "image": "stop_photos/beachChairs.jpeg",
+      "description": "A comfy chair and a good book"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 10,
+    "fields": {
+      "stop": 3,
+      "image": "stop_photos/beachFriends.jpeg",
+      "description": "A beach day with our nephew and my best friend"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 11,
+    "fields": {
+      "stop": 3,
+      "image": "stop_photos/beachGrantAndErnest.jpeg",
+      "description": "Grant and Ernest enjoying the beach breeze"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 12,
+    "fields": {
+      "stop": 3,
+      "image": "stop_photos/beachSunset2.jpeg",
+      "description": "Another beautiful sunset"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 13,
+    "fields": {
+      "stop": 3,
+      "image": "stop_photos/beachThrone.jpeg",
+      "description": "A sand shelf throne with seashells"
+    }
+  },
+    {
+    "model": "WanderLensapi.photo",
+    "pk": 14,
+    "fields": {
+      "stop": 2,
+      "image": "stop_photos/Rome1.jpeg",
+      "description": "The Colosseum"
+    }
+  },
+    {
+    "model": "WanderLensapi.photo",
+    "pk": 15,
+    "fields": {
+      "stop": 2,
+      "image": "stop_photos/Rome2.jpeg",
+      "description": "The Trevi Fountain"
+    }
+  },
+    {
+    "model": "WanderLensapi.photo",
+    "pk": 16,
+    "fields": {
+      "stop": 2,
+      "image": "stop_photos/Rome3.jpeg",
+      "description": "Entering into The Vatican City"
+    }
+  },
+    {
+    "model": "WanderLensapi.photo",
+    "pk": 17,
+    "fields": {
+      "stop": 2,
+      "image": "stop_photos/Rome4.jpeg",
+      "description": "The acropolis"
+    }
+  },
+    {
+    "model": "WanderLensapi.photo",
+    "pk": 18,
+    "fields": {
+      "stop": 2,
+      "image": "stop_photos/Rome5.jpeg",
+      "description": "The Capitol"
+    }
+  },
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 19,
+    "fields": {
+      "stop": 13,
+      "image": "stop_photos/Egypt1.jpeg",
+      "description": "Valley of the Kings"
+    }
+  },  
+  {
+    "model": "WanderLensapi.photo",
+    "pk": 20,
+    "fields": {
+      "stop": 13,
+      "image": "stop_photos/Egypt2.jpeg",
+      "description": "River Cruise on the Nile"
+    }
+  },
+    {
+    "model": "WanderLensapi.photo",
+    "pk": 21,
+    "fields": {
+      "stop": 13,
+      "image": "stop_photos/Egypt3.jpeg",
+      "description": "The Great Sphinx"
+    }
+  }
+]
+

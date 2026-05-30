@@ -5,8 +5,8 @@
     "fields": {
       "user_id": 1,
       "trip_type_id": 2,
-      "name": "Trip to Paris",
-      "description": "A wonderful trip to the city of lights.",
+      "name": "Trip to Italy",
+      "description": "A month long family adventure through Italy.",
       "color": "#FF5733",
       "start_date": "2024-07-01",
       "is_private": false
@@ -75,6 +75,19 @@
       "color": "#E74C3C",
       "start_date": "2024-12-15",
       "is_private": true
+    }
+  },
+    {
+    "model": "WanderLensapi.trip",
+    "pk": 7,
+    "fields": {
+      "user_id": 1,
+      "trip_type_id": 3,
+      "name": "Egypt",
+      "description": "Exploring Ancient Egypt",
+      "color": "#cddc39",
+      "start_date": "2002-06-15",
+      "is_private": false
     }
   }
 ]

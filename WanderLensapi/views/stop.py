@@ -19,7 +19,7 @@ class StopView(ViewSet):
             Response -- JSON serialized instance
         """
         new_stop = Stop()
-        new_stop.trip = Trip.objects.get(pk=request.data["trip_id"])
+        new_stop.trip = Trip.objects.get(pk=request.data["trip_id"], user=request.auth.user)
         new_stop.name = request.data["name"]
         new_stop.description = request.data["description"]
         new_stop.city = request.data.get("city", None)
